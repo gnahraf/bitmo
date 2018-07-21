@@ -1,15 +1,16 @@
-#Bitmo
+Bitmo
+=====
 
 A compression scheme for moderately populated bit vectors
 
-##Synopsis
+## Synopsis
 
 This uses a simple, bit-level prefix compression. Although I've seen variations on this scheme
 in closed source software, I've never seen it properly documented. This is rescued code I originally
 I banged out to share in an email conversation with a colleague some years ago. It's probably mostly
 of pedagogical interest (seldom beats P4Delta, for eg). Probably.
 
-##Binary Data Model
+## Binary Data Model
 
 A Bitmo vector represents a set numbers in the range [0, 2^depth) using a tree abstraction. In this
 model, the leaves of the tree represent membership in the set of numbers. The ASCII diagram below
